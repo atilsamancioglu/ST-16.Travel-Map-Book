@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		FC12177C1EF6B32000EAA28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12177B1EF6B32000EAA28E /* AppDelegate.swift */; };
-		FC12177E1EF6B32000EAA28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12177D1EF6B32000EAA28E /* ViewController.swift */; };
+		FC12177E1EF6B32000EAA28E /* mapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC12177D1EF6B32000EAA28E /* mapVC.swift */; };
 		FC1217811EF6B32000EAA28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12177F1EF6B32000EAA28E /* Main.storyboard */; };
 		FC1217841EF6B32000EAA28E /* Travel_Map_Book.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC1217821EF6B32000EAA28E /* Travel_Map_Book.xcdatamodeld */; };
 		FC1217861EF6B32000EAA28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1217851EF6B32000EAA28E /* Assets.xcassets */; };
 		FC1217891EF6B32000EAA28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1217871EF6B32000EAA28E /* LaunchScreen.storyboard */; };
+		FC1217911EF6BD8E00EAA28E /* tableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1217901EF6BD8E00EAA28E /* tableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC1217781EF6B32000EAA28E /* Travel Map Book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel Map Book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC12177B1EF6B32000EAA28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC12177D1EF6B32000EAA28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC12177D1EF6B32000EAA28E /* mapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapVC.swift; sourceTree = "<group>"; };
 		FC1217801EF6B32000EAA28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC1217831EF6B32000EAA28E /* Travel_Map_Book.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Travel_Map_Book.xcdatamodel; sourceTree = "<group>"; };
 		FC1217851EF6B32000EAA28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1217881EF6B32000EAA28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC12178A1EF6B32000EAA28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC1217901EF6BD8E00EAA28E /* tableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				FC12177B1EF6B32000EAA28E /* AppDelegate.swift */,
-				FC12177D1EF6B32000EAA28E /* ViewController.swift */,
+				FC12177D1EF6B32000EAA28E /* mapVC.swift */,
+				FC1217901EF6BD8E00EAA28E /* tableVC.swift */,
 				FC12177F1EF6B32000EAA28E /* Main.storyboard */,
 				FC1217851EF6B32000EAA28E /* Assets.xcassets */,
 				FC1217871EF6B32000EAA28E /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC12177E1EF6B32000EAA28E /* ViewController.swift in Sources */,
+				FC12177E1EF6B32000EAA28E /* mapVC.swift in Sources */,
+				FC1217911EF6BD8E00EAA28E /* tableVC.swift in Sources */,
 				FC1217841EF6B32000EAA28E /* Travel_Map_Book.xcdatamodeld in Sources */,
 				FC12177C1EF6B32000EAA28E /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Travel Map Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Travel-Map-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,6 +294,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7SH627DBA4;
 				INFOPLIST_FILE = "Travel Map Book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.atilsamancioglu.Travel-Map-Book";
 				PRODUCT_NAME = "$(TARGET_NAME)";
