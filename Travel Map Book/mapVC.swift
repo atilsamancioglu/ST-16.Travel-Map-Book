@@ -53,6 +53,9 @@ class mapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
             nameText.text = self.selectedTitle
             commentText.text = self.selectedSubtitle
             
+            
+         
+            
         }
         
     }
@@ -85,6 +88,16 @@ class mapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         let region = MKCoordinateRegion(center: location, span: span)
         mapView.setRegion(region, animated: true)
         
+        //location'da açıldığına emin olmak için şunları ekleyebiliriz.
+        locationManager.stopUpdatingLocation()
+        
+        if selectedTitle != "" {
+        
+        let locationChosen = CLLocationCoordinate2D(latitude: self.selectedLatitude, longitude: self.selectedLongitude)
+        let spanChosen = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
+        let regionChosen = MKCoordinateRegion(center: locationChosen, span: spanChosen)
+        mapView.setRegion(regionChosen, animated: true)
+        }
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
